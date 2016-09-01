@@ -1,0 +1,31 @@
+{
+    "name": "children",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "gulp clean",
+        "clean:cache": "gulp clean:cache",
+        "build:css": "gulp build:css",
+        "build:js": "gulp build:js",
+        "build:images": "gulp build:images",
+        "build:all": "gulp build:all",
+        "watch:css": "gulp watch:css",
+        "watch:js": "gulp watch:js",
+        "watch:images": "gulp watch:images",
+        "watch:all": "gulp watch:all"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "del": "^2.2.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-connect": "^4.0.0",
+        "gulp-notify": "^2.2.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.1",
+        "gulp-sourcemaps": "^2.0.0-alpha"
+    }
+}

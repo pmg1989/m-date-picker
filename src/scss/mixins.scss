@@ -1,0 +1,30 @@
+@function rgb2rgba($r,$g: -1,$b: -1) {
+    $a: null !default;
+    @if($b==-1) {
+        $tmp: $r;
+
+        @if($g>0 and $g<1) {
+            $a: $g;
+        }
+
+        @if($b == -1) {
+            $r: red($tmp);
+            $g: green($tmp);
+            $b: blue($tmp);
+        }
+    }
+
+    @if($a==null) {
+        $min: min($r,$g,$b);
+        $a: (255-$min) / 255;
+        $r: round(($r - $min) / $a);
+        $g: round(($g - $min) / $a);
+        $b: round(($b - $min) / $a);
+    }
+
+    @if($a==1) {
+        @return rgb($r,$g,$b);
+    }
+
+    @return rgba($r,$g,$b,$a);
+}
