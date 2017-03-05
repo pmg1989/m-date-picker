@@ -1,17 +1,18 @@
 {
-    "name": "children",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "gulp connect",
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-connect": "^4.0.0"
-    },
-    "dependencies": {
-    }
+  "name": "m.xishiqu.com",
+  "version": "2.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp connect"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0"
+  },
+  "dependencies": {
+  }
 }
